@@ -15,8 +15,8 @@ const (
 	defaultExt        = "sql"
 )
 
-// createCmd (meant to be called via a CLI command) creates a new migration
-func createCmd(dir string, name string, print bool) error {
+// CreateCmd (meant to be called via a CLI command) creates a new migration
+func CreateCmd(dir string, name string, print bool) error {
 	dir = filepath.Clean(dir)
 	ext := "." + strings.TrimPrefix(defaultExt, ".")
 
