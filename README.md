@@ -1,6 +1,14 @@
 # go-pg-migrate
 ### It's a very slim golang library for postgres migrations.
 
+## ⚙️ Installation
+
+Make sure you have Go installed ([download](https://golang.org/dl/)). Version `1.16` or higher is required.
+
+```bash
+go get github.com/EugeneTorap/go-pg-migrate
+```
+
 ## Use auto migration in your Go project
 
 * Uses [Go modules](https://golang.org/cmd/go/#hdr-Modules__module_versions__and_more) to manage dependencies.
@@ -17,7 +25,7 @@ import (
     _ "github.com/EugeneTorap/go-pg-migrate/postgres"
     "github.com/EugeneTorap/go-pg-migrate/source/iofs"
     _ "github.com/lib/pq"
-	"log"
+    "log"
 )
 
 //go:embed migrations/*.sql
